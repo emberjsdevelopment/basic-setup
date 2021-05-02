@@ -1,4 +1,20 @@
+# About
+
+
 # demo-app-ember
+
+To setup ember
+npm install -g ember-cli
+
+To create route
+>ember generate route scientists
+
+>ember generate component people-list
+
+app/routes/scientists.js
+
+html part
+app/templates/application.hbs - main file
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.

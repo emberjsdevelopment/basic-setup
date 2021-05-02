@@ -1,7 +1,18 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{!-- <WelcomePage /> --}}
-{{!-- Feel free to remove this! --}}
+The following component displays Ember's default welcome message.
+<WelcomePage />
+Feel free to remove this!
 
 <h1>PeopleTracker</h1>
 
+<ul>
+  {{#each this.model as |scientist|}}
+    <li>{{scientist}}</li>
+  {{/each}}
+</ul>
+
+<PeopleList @title="List of Scientists" @people={{this.model}} />
+
+
+
+{{!-- nested route will be rendered in that place. --}}
 {{outlet}}
